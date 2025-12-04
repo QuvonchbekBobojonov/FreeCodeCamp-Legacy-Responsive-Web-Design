@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <header>JavaScript Documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Getting_Started">Getting Started</a>
+      <a class="nav-link" href="#Syntax_and_Types">Syntax and Types</a>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main-doc">
+      <!-- Section 1 -->
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          JavaScript is a versatile programming language that runs in the browser
+          and on servers using environments like <code>Node.js</code>.
+        </p>
+        <p>
+          It allows you to create interactive web pages, handle events, and
+          communicate with servers using APIs such as <code>fetch()</code>.
+        </p>
+        <p>
+          JavaScript is one of the core technologies of the web, along with
+          <code>HTML</code> and <code>CSS</code>.
+        </p>
+        <ul>
+          <li>Client-side scripting language</li>
+          <li>Supports object-oriented programming</li>
+          <li>Used in both frontend and backend</li>
+        </ul>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+        <p>
+          The easiest way to start with JavaScript is to include it directly in
+          an HTML file using the <code>&lt;script&gt;</code> tag.
+        </p>
+        <p>
+          You can also run JavaScript from the browser console, which is useful
+          for quick tests and debugging.
+        </p>
+        <p>
+          A simple example of JavaScript in HTML looks like this:
+        </p>
+        <pre>
+<code>&lt;script&gt;
+  console.log("Hello, JavaScript!");
+&lt;/script&gt;</code>
+        </pre>
+        <ul>
+          <li>Use a modern browser</li>
+          <li>Open DevTools to access the console</li>
+          <li>Experiment with simple commands</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="main-section" id="Syntax_and_Types">
+        <header>Syntax and Types</header>
+        <p>
+          JavaScript supports several data types such as
+          <code>string</code>, <code>number</code>, <code>boolean</code>,
+          <code>null</code>, <code>undefined</code>, <code>symbol</code>, and
+          <code>object</code>.
+        </p>
+        <p>
+          You can declare variables using <code>let</code>,
+          <code>const</code>, or the older <code>var</code> keyword.
+        </p>
+        <p>
+          Example of variable declarations:
+        </p>
+        <pre>
+<code>let age = 18;
+const name = "Alex";
+var isAdmin = false;</code>
+        </pre>
+        <p>
+          Arrays and objects are very common structures in JavaScript programs.
+        </p>
+        <ul>
+          <li><code>let</code> is block-scoped</li>
+          <li><code>const</code> is used for constants</li>
+          <li><code>var</code> is function-scoped</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>
+          Control flow statements allow you to make decisions and repeat actions
+          in your code.
+        </p>
+        <p>
+          Common statements include <code>if</code>, <code>else</code>,
+          <code>switch</code>, <code>for</code>, and <code>while</code>.
+        </p>
+        <p>
+          Example using an <code>if</code> statement:
+        </p>
+        <pre>
+<code>let score = 90;
+if (score &gt;= 60) {
+  console.log("You passed!");
+} else {
+  console.log("Try again.");
+}</code>
+        </pre>
+        <p>
+          Loops are used to execute a block of code multiple times, such as
+          iterating over an array.
+        </p>
+        <ul>
+          <li><code>if/else</code> for branching logic</li>
+          <li><code>for</code> loops for counting iterations</li>
+          <li><code>while</code> loops for repeated checks</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          Functions in JavaScript are reusable blocks of code that perform a
+          specific task.
+        </p>
+        <p>
+          They can be declared using the <code>function</code> keyword or as
+          arrow functions using <code>=&gt;</code>.
+        </p>
+        <p>
+          Example of a regular function:
+        </p>
+        <pre>
+<code>function add(a, b) {
+  return a + b;
+}</code>
+        </pre>
+        <p>
+          Example of an arrow function:
+        </p>
+        <pre>
+<code>const multiply = (a, b) =&gt; a * b;</code>
+        </pre>
+        <p>
+          Functions can take parameters and return values, making them powerful
+          tools for structuring your code.
+        </p>
+        <ul>
+          <li>Use functions to avoid repeating code</li>
+          <li>Arrow functions are shorter to write</li>
+          <li>Functions can be passed as arguments</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

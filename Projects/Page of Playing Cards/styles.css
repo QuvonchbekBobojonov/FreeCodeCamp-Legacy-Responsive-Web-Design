@@ -1,0 +1,61 @@
+body {
+  background: #0b3d2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+#playing-cards {
+  display: flex;                 /* ✅ flexbox */
+  justify-content: center;       /* ✅ horizontal center */
+  flex-wrap: wrap;               /* ✅ wrap cards */
+  gap: 20px;                     /* ✅ 20px space */
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* REQUIRED BY TEST */
+  align-self: center;
+}
+
+
+/* CARD */
+.card {
+  width: 140px;
+  height: 200px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;                 /* ✅ flexbox */
+  justify-content: space-between; /* ✅ space-between */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* LEFT */
+.left {
+  align-self: flex-start; /* ✅ start */
+  font-weight: bold;
+}
+
+/* MIDDLE */
+.middle {
+  display: flex;         /* ✅ flexbox */
+  flex-direction: column; /* ✅ column */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* RIGHT */
+.right {
+  align-self: flex-end; /* ✅ end */
+  font-weight: bold;
+  transform: rotate(180deg);
+}
